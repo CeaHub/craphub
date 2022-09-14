@@ -1,3 +1,4 @@
+--Made by cea!
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 local UserInputService = game:GetService("UserInputService")
@@ -12,16 +13,17 @@ local Down = false
 local Inset = GuiService:GetGuiInset()
 
 --// Options \\--
---Change as you wish for below
 getgenv().Options = {
-    Enabled = true,  
-    TeamCheck = true,
+    Enabled = true,
+    TeamCheck = false,
     Triggerbot = false,
     Smoothness = true,
     AimPart = "Head",
-    FOV = 300
+    AimPart = "Neck",
+    AimPart = "Torso",
+    FOV = 150
 }
---------------------------
+
 --// Functions \\--
 local gc = function()
 	local nearest = math.huge
