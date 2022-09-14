@@ -1,5 +1,5 @@
 --Made By Cea
---Modify To your liking!
+--Needs work, broken ;(
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 local UserInputService = game:GetService("UserInputService")
