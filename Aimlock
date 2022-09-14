@@ -19,8 +19,6 @@ getgenv().Options = {
     Triggerbot = false,
     Smoothness = true,
     AimPart = "Head",
-    AimPart = "Neck",
-    AimPart = "Torso",
     FOV = 150
 }
 
