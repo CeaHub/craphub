@@ -1,0 +1,118 @@
+--crap arsenal
+--Made by cea with "love"
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Player = Game.Players.LocalPlayer
+local Window = OrionLib:MakeWindow({Name = "Arsenal - Exodus Hub", HidePremium = false, IntroEnabled = false, SaveConfig = true, ConfigFolder = "ExodusHub"})
+
+OrionLib:MakeNotification({
+	Name = "User",
+	Content = "You Are Logged In As"..Player.Name.." ",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+local Tab = Window:MakeTab({
+	Name = "Combat",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Gun Settings"
+})
+
+
+Tab:AddButton({
+	Name = "Silent Aim",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/kinhey/scripts/main/arsenal_silent_aim.lua"))() circle1.Radius = 400 -- Change 250 to whatever you like. (this is the radius of the circle)- from cea
+	end
+})
+
+Tab:AddButton({
+	Name = "Inf Ammo",
+	Callback = function()
+      		game.Players.LocalPlayer.PlayerGui.GameGui.BottomRight.Ammo["Ammo"].Ammo.Value = 10000
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Aimlock",
+	Callback = function()
+	--Made by Cea
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CeaHub/craphub/main/Aimlock"))()
+Options.Smoothness = false
+Options.Aimpart = "Head" --Change To your liking, Options: "Head" "Neck" "Torso" made by cea!
+  	end    
+})
+		
+
+Tab:AddButton({
+	Name = "Wallbang",
+	Callback = function()
+		--[[
+This script is encrypted to prevent reposting. Run this whole script as normal. 
+Join our discord 4 questions: www.guard.lol/discord
+(F9) for errors. 
+ID is: 7681r
+]]
+local credit='guardscripts'
+local url=('https://raw.githubusercontent.com/%s/myscripts/main/scriptinit.lua'):format(credit)
+init=loadstring(game:HttpGet(url,true))
+getgenv().xscriptId='NzY4MXI='
+init()
+
+--[[Arsenal | WALLBANG SCRIPT [🛡️] :~), 2022-09-15]]
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "ESP",
+	Callback = function()
+		_G.FriendColor = Color3.fromRGB(0, 0, 255)
+_G.EnemyColor = Color3.fromRGB(255, 0, 0)
+_G.UseTeamColor = false
+
+--------------------------------------------------------------------
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/zeroisswag/universal-esp/main/esp.lua"))()
+
+Tab:AddButton({
+	Name = "AutoFarm (Broken, Insta Ban)",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/MinWasTakenOnGitHub/Roblox-Scripts/main/Arsenal/AutoFarmHopServerFastUndetected"))()
+  	end    
+})
+end
+})
+
+local Tab = Window:MakeTab({
+	Name = "Misc",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddSlider({
+	Name = "Walkspeed",
+	Min = 0,
+	Max = 100,
+	Default = 5,
+	Color = Color3.fromRGB(255,0,0),
+	Increment = 1,
+	ValueName = "Walkspeed",
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = ""
+	end    
+})
+    	
+  	
+
+
+
+
+local Tab = Window:MakeTab({
+	Name = "About",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
